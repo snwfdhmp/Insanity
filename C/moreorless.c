@@ -28,11 +28,10 @@ int niveau(){
 int main(int argc, char const *argv[])
 {
 	char begin;
-	unsigned int player, random, max;
+	unsigned int finded = 0, player, random, max;
 
 	srand(time(NULL));
-	int finded = 0;
-
+	
 	printf("====== BIENVENU DANS LE PLUS OU MOINS ======\n");
 	printf("Le but du jeu est de deviner le nombre auquel je pense\nVous etes pret ?\n");
 	printf("Tapez 'O' pour commencer\n");
@@ -60,7 +59,7 @@ int main(int argc, char const *argv[])
 		printf("Ok laisse moi reflechir....\n");
 		sleep(2);
 		printf("C'est bon !\n");
-		printf("%d\n", random);
+		//printf("%d\n", random);
 		
 		do{
 			printf("Tapez un nombre : ");
