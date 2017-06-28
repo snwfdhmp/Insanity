@@ -9,6 +9,7 @@ int main(int argc, char const *argv[])
 	
 	int size = getlen(wordtoguess);
 	//printf("%d\n", size);
+	
 	char *userword = malloc(size*sizeof(char));
 	int count = 0, life = 10, win;
 

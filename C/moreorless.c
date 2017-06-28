@@ -88,7 +88,8 @@ int main(int argc, char const *argv[])
 
 		printf("\n\n\n");
 		printf("Congrats you found what number I was thinking about!! You are more intelligent than I though\n");
-		printf("You want to play again ?\n");
+		printf("Do you want to play again
+			?\n");
 		printf("Press 'Enter' to replay et 'q' to quit\n");
 	}while(getchar() != 'q' && getchar() == '\n');
 
