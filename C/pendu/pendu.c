@@ -12,20 +12,20 @@ int check(char *player, char* game){
 }
 
 char* chooseWord(){
-	FILE* words;
-	char *word = malloc(20*sizeof(char));
-	words = fopen("liste_francais.txt","r");
+	FILE* words = fopen("liste_francais.txt","r");
 
+	char *word = malloc(20*sizeof(char));
+	
 	srand(time(NULL));
 	int random = (rand() % (MAX - MIN + 1)) + MIN;
 	
-	printf("%d\n", random);
+	//printf("%d\n", random);
 
 	for(int i =0; i < random; i++){
 		fscanf(words, "%s", word);
 		//printf("%s\n", word);
 	}
+	fclose(words);
 
 	return word;
-	
 }
