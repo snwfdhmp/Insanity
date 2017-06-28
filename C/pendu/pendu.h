@@ -8,4 +8,3 @@
 int check(char *player, char *game);
 int getlen(char *);
 char* chooseWord();
-//int reveal(char guess, char *wordtoguess);

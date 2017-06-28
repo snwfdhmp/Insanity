@@ -5,7 +5,7 @@
 int main(int argc, char const *argv[])
 {
 	char* wordtoguess = chooseWord();
-	printf("%s\n", wordtoguess);
+	//printf("%s\n", wordtoguess);
 	
 	int size = getlen(wordtoguess);
 	char *userword = malloc(size*sizeof(char));
